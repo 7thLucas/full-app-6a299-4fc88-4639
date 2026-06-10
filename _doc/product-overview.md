@@ -1,0 +1,1 @@
+Build me an app for warehouse supervisors to help them track inbound shipments, storage locations, and outbound orders with the goal to speed up fulfillment and eliminate misplaced inventory
