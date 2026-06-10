@@ -6,40 +6,40 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #09090b;
+    --background: #f7f8fa;
+    --foreground: #1f2733;
     --card: #ffffff;
-    --card-foreground: #09090b;
+    --card-foreground: #1f2733;
     --popover: #ffffff;
-    --popover-foreground: #09090b;
-    --primary: #2563eb;
+    --popover-foreground: #1f2733;
+    --primary: #1e5bbf;
     --primary-foreground: #ffffff;
-    --secondary: #f4f4f5;
-    --secondary-foreground: #18181b;
-    --muted: #f4f4f5;
-    --muted-foreground: #71717a;
-    --accent: #f4f4f5;
-    --accent-foreground: #18181b;
-    --destructive: #ef4444;
-    --destructive-foreground: #fafafa;
-    --border: #e4e4e7;
-    --input: #e4e4e7;
-    --ring: #2563eb;
-    --radius: 0.5rem;
+    --secondary: #eef1f6;
+    --secondary-foreground: #1f2733;
+    --muted: #eef1f6;
+    --muted-foreground: #5a6473;
+    --accent: #16a34a;
+    --accent-foreground: #ffffff;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+    --border: #dfe3ea;
+    --input: #dfe3ea;
+    --ring: #1e5bbf;
+    --radius: 0.625rem;
     --chart-1: #f97316;
     --chart-2: #0d9488;
     --chart-3: #1e3a5f;
     --chart-4: #d4a017;
     --chart-5: #ea580c;
     --navbar-background: #ffffff;
-    --sidebar-background: #fafafa;
-    --sidebar-foreground: #3f3f46;
-    --sidebar-primary: #2563eb;
+    --sidebar-background: #14233b;
+    --sidebar-foreground: #c7d2e0;
+    --sidebar-primary: #1e5bbf;
     --sidebar-primary-foreground: #ffffff;
-    --sidebar-accent: #f4f4f5;
-    --sidebar-accent-foreground: #18181b;
-    --sidebar-border: #e4e4e7;
-    --sidebar-ring: #2563eb;
+    --sidebar-accent: #1f3354;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #25395b;
+    --sidebar-ring: #1e5bbf;
   }
 
   .dark {
@@ -176,11 +176,13 @@
 }
 
 body {
-  background: #f2f2f7;
+  background: var(--background);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* Hide scrollbar for native mobile feel */
-::-webkit-scrollbar {
-  display: none;
+/* Tabular treatment for location codes / SKUs so they align in tables */
+.font-loc {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: 0.02em;
 }

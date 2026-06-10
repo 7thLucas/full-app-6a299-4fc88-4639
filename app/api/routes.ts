@@ -62,4 +62,10 @@ async function registerModuleRoutes(): Promise<void> {
 
 await registerModuleRoutes();
 
+// Explicitly register app-level (non-module) domain routes. Module discovery
+// above only scans app/modules, so WareFlow's API router is mounted here.
+const wareflowRoutes = (await import("./wareflow/wareflow.routes")).default;
+logger.info("Registering WareFlow domain routes");
+router.use(wareflowRoutes);
+
 export default router;

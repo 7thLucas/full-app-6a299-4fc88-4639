@@ -102,6 +102,12 @@ export async function runSeeds(): Promise<void> {
       await seed.run();
     }
 
+    // Explicitly run app-level (non-module) domain seeds. Seed discovery above
+    // only scans app/modules, so WareFlow's seed runs here.
+    const { seedWareflow } = await import("../wareflow/wareflow.seed");
+    logger.info("Running seed seedWareflow from app/api/wareflow/wareflow.seed.ts");
+    await seedWareflow();
+
     logger.info("✅ All seed operations completed successfully");
   } catch (error) {
     logger.error("❌ Seed operations failed:", error);

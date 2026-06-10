@@ -16,20 +16,26 @@ export type TDefaultConfigurableData = {
   appName: string;
   logoUrl: string;
   brandColor: TBrandColor;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  tagline?: string;
+  warehouseName?: string;
+  supervisorName?: string;
+  zones?: string[];
+  lowStockThreshold?: number;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "FILL_APP_NAME_HERE",
+  appName: "WareFlow",
   logoUrl: "FILL_LOGO_URL_HERE",
   brandColor: {
-    primary: "FILL_PRIMARY_COLOR_HERE",
-    secondary: "FILL_SECONDARY_COLOR_HERE",
-    accent: "FILL_ACCENT_COLOR_HERE",
+    primary: "#1E5BBF",
+    secondary: "#5A6473",
+    accent: "#16A34A",
   },
+  tagline: "A known location for every item — dock to truck.",
+  warehouseName: "Main Distribution Center",
+  supervisorName: "Supervisor",
+  zones: ["A", "B", "C", "D", "Cold", "Returns"],
+  lowStockThreshold: 10,
   // ─────────────────────────────────────────────────────────────────────
   // Add new field defaults here. See RULES.md §5 for per-type shape.
   // Required branding fields → use the FILL_X_HERE placeholder pattern.

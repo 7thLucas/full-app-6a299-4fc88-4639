@@ -47,4 +47,11 @@ export async function initializeModels(): Promise<void> {
     logger.info(`Initializing model from ${path.relative(process.cwd(), modelFile)}`);
     await import(pathToFileURL(modelFile).href);
   }
+
+  // Explicitly register app-level (non-module) domain models. The auto-discovery
+  // above only scans app/modules, so WareFlow's models are registered here.
+  await import("../wareflow/models/item.model");
+  await import("../wareflow/models/shipment.model");
+  await import("../wareflow/models/order.model");
+  logger.info("Initialized WareFlow domain models");
 }
