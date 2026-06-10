@@ -32,7 +32,14 @@ data.
 2. **Storage locations** — assign and track the slot/bin/zone where each item lives;
    look up any item's current location instantly.
 3. **Outbound orders** — build and track outbound orders, guide picking from known
-   locations, and confirm dispatch.
+   locations, and confirm dispatch (blocked until every line is picked).
+4. **Operations dashboard** — live operational counts (expected shipments, awaiting
+   put-away, items stored, open orders, dispatched today) and an awaiting-put-away
+   watchlist that prompts the next action.
+
+Items use human-readable location codes (e.g. `B-04-12`). The app ships with
+owner-editable configurables (app name, logo, brand colors, tagline, facility name,
+supervisor greeting, storage zones, low-stock threshold) requiring no code changes.
 
 ## Goals / outcomes
 - **Speed up fulfillment** — shorten the time from order to dispatch by removing search
