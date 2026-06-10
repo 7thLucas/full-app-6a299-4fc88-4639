@@ -51,4 +51,6 @@ office: fast to read, easy to act on during a shift. Calm, credible, competent.
 - One connected flow beats three disconnected trackers.
 
 ## Status
-Pre-build. Name, branding, and detailed scope still being confirmed during onboarding.
+Pre-build. Name (**WareFlow**) and branding (industrial orange #F97316 on slate/white)
+confirmed. MVP scope locked: inbound shipments, storage locations, outbound orders.
+Awaiting initial app generation.
