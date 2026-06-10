@@ -1,4 +1,4 @@
-# Product Overview — WareFlow (working name)
+# Product Overview — WareFlow
 
 > Single source of truth for the product. Update when product facts change.
 
