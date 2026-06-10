@@ -58,6 +58,9 @@ office: fast to read, easy to act on during a shift. Calm, credible, competent.
 - One connected flow beats three disconnected trackers.
 
 ## Status
-Pre-build. Name (**WareFlow**) and branding (industrial orange #F97316 on slate/white)
-confirmed. MVP scope locked: inbound shipments, storage locations, outbound orders.
-Awaiting initial app generation.
+**Built & live (MVP).** Initial generation complete — inbound, storage, outbound, and
+the operations dashboard are working as one connected flow on the Remix/Express/MongoDB
+stack (REST API under `/api/wareflow`), with demo data seeded for walkthrough. Intended
+brand is industrial orange #F97316 on slate/white (a brand-color configurable); the
+first build currently renders an industrial-blue default to be flipped to orange. Next:
+collect supervisor feedback and prioritize explore-phase features.
